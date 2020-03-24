@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Шевченко](https://up.htmlacademy.ru/adaptive/19/user/378235).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
