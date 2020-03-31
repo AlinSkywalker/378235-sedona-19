@@ -28,7 +28,92 @@
       </nav>
     </header>
     <main class="page-main">
-
+      <h1 class="page-main__title">Оставьте свой отзыв</h1>
+      <p class="page-main__content">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="feedback-form">
+        <fieldset class="feedback-form__fieldset">
+          <legend class="feedback-form__legend">Представьтесь:</legend>
+          <ul class="feedback-form__person-info">
+            <li class="feedback-form__form-item">
+              <label for="first-name">Имя</label>
+              <input type="text" id="first-name" name="first-name" tabindex="1" class="feedback-form__input feedback-form__input--text">
+            </li>
+            <li class="feedback-form__form-item">
+              <label for="last-name">Фамилия</label>
+              <input type="text" id="last-name" name="last-name" tabindex="2" class="feedback-form__input feedback-form__input--text">
+            </li>
+            <li class="feedback-form__form-item">
+              <label for="middle-name">Отчество</label>
+              <input type="text" id="middle-name" name="middle-name" tabindex="3" class="feedback-form__input feedback-form__input--text">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback-form__fieldset">
+          <legend class="feedback-form__legend">Контактная информация:</legend>
+          <ul class="feedback-form__contact-info">
+            <li class="feedback-form__form-item">
+              <label for="phone">Контактный телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="Введите телефон" tabindex="4"  class="feedback-form__input feedback-form__input--tel">
+            </li>
+            <li class="feedback-form__form-item">
+              <label for="email">Электронная почта</label>
+              <input type="email" id="email" name="email" placeholder="Введите e-mail" tabindex="5" class="feedback-form__input feedback-form__input--email">
+            </li>
+        </fieldset>
+        <fieldset class="feedback-form__fieldset">
+          <legend class="feedback-form__legend">ВАше Общее впечатление:</legend>
+          <ul class="feedback-form__impression-info">
+            <li class="feedback-form__form-item">
+              <input type="radio" id="rather-positive" name="impression-info" tabindex="6" class="feedback-form__input feedback-form__input--radio">
+              <label for="rather-positive">Скорее положительное</label>
+            </li>
+            <li class="feedback-form__form-item">
+              <input type="radio" id="rather-negative" name="impression-info" tabindex="7" class="feedback-form__input feedback-form__input--radio">
+              <label for="rather-negative">Скорее отрицательное</label>
+            </li>
+            <li class="feedback-form__form-item">
+              <input type="radio" id="difficult-say" name="impression-info" tabindex="8" class="feedback-form__input feedback-form__input--radio">
+              <label for="difficult-say">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback-form__fieldset">
+          <legend class="feedback-form__legend">посещенные достопримечательности:</legend>
+          <ul class="feedback-form__attractions-info">
+            <li class="feedback-form__form-item">
+              <input type="checkbox" id="diablo-bridge" name="diablo-bridge" tabindex="9" class="feedback-form__input feedback-form__input--checkbox">
+              <label for="diablo-bridge">Мост Дьявола</label>
+            </li>
+            <li class="feedback-form__form-item">
+              <input type="checkbox" id="bell-mountain" name="bell-mountain" tabindex="10" class="feedback-form__input feedback-form__input--checkbox">
+              <label for="bell-mountain">Гора-Колокол</label>
+            </li>
+            <li class="feedback-form__form-item">
+              <input type="checkbox" id="slide-park" name="slide-park" tabindex="11" class="feedback-form__input feedback-form__input--checkbox">
+              <label for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="feedback-form__form-item">
+              <input type="checkbox" id="red-rocks" name="red-rocks" tabindex="12" class="feedback-form__input feedback-form__input--checkbox">
+              <label for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback-form__emotion-info">
+          <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+          <textarea type="text" placeholder="Опишите подробно все свои восторги" tabindex="13" class="feedback-form__input feedback-form__input--textarea"></textarea>
+        </fieldset>
+        <button class="feedback-form__button button button--blue" tabindex="14">Отправить отзыв</button>
+        <div class="feedback-form__success modal">
+          <h2 class="feedback-form__modal-title">Ваш отзыв отправлен!</h2>
+          <p class="feedback-form__modal-content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="feedback-form__modal-button button button--blue">ЗАкРЫТЬ ОКНО</button>
+        </div>
+        <div class="feedback-form__failure modal">
+          <h2 class="feedback-form__modal-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+          <p class="feedback-form__modal-content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="feedback-form__modal-button button button--blue">ОК</button>
+        </div>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#VISITSEDONA</p>
