@@ -23,8 +23,31 @@
 }
 
 .reasons__details {
-  text-align: center;
+  text-align: left;
   color: @black-two;
 
   background-color: #ffffff;
+}
+
+.reasons__detail-item {
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons__info {
+    display: flex;
+  }
+
+  .reasons__details {
+    display: flex;
+  }
+
+  .reasons__photo--diablo-bridge {
+    order: 0;
+  }
+
+  .reasons__info-wrapper--diablo-bridge {
+    order: 1;
+  }
 }
