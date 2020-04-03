@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href = "index.html">
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Фото и видео</a>
+            <a class="main-nav__item-link">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="main-nav__item-link" href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,28 +37,28 @@
           <li class="photos__item">
             <img class="photos__image" src="https://via.placeholder.com/150x150" alt="неродные просторы">
             <h3 class="photos__name">неродные просторы</h3>
-            <span class="photos__autor">Автор фото: Борис</span>
+            <p class="photos__autor">Автор фото: Борис</p>
             <button class="photos__like-button">Лайкнуть</button>
             <span class="photos__likes">1350</span>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Местная растительность">
             <h3 class="photos__name">Местная растительность</h3>
-            <span class="photos__autor">Автор фото: Сергей</span>
+            <p class="photos__autor">Автор фото: Сергей</p>
             <button class="photos__like-button">Лайкнуть</button>
             <span class="photos__likes">143</span>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Дорога на север">
             <h3 class="photos__name">Дорога на север</h3>
-            <span class="photos__autor">Автор фото: Петр</span>
+            <p class="photos__autor">Автор фото: Петр</p>
             <button class="photos__like-button">Лайкнуть</button>
             <span class="photos__likes">96</span>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="https://via.placeholder.com/150x150" alt="Мост дьявола">
             <h3 class="photos__name">Мост дьявола</h3>
-            <span class="photos__autor">Автор фото: Антон</span>
+            <p class="photos__autor">Автор фото: Антон</p>
             <button class="photos__like-button">Лайкнуть</button>
             <span class="photos__likes">254</span>
           </li>
@@ -98,7 +99,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <span class="copyright__text">Разработано:</span>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>

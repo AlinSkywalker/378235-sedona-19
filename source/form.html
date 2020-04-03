@@ -3,26 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href = "index.html">
         <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="main-nav__item-link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item  main-nav__item--active">
-            <a>Форма отзыва</a>
+            <a class="main-nav__item-link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="main-nav__item-link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,15 +37,15 @@
           <ul class="feedback-form__person-info">
             <li class="feedback-form__item">
               <label class="feedback-form__label" for="first-name">Имя</label>
-              <input class="feedback-form__input feedback-form__input--text" type="text" id="first-name" name="first-name" tabindex="1">
+              <input class="feedback-form__input feedback-form__input--text" type="text" id="first-name" name="first-name" tabindex="1" value="Петр">
             </li>
             <li class="feedback-form__item">
               <label class="feedback-form__label" for="last-name">Фамилия</label>
-              <input class="feedback-form__input feedback-form__input--text" type="text" id="last-name" name="last-name" tabindex="2">
+              <input class="feedback-form__input feedback-form__input--text" type="text" id="last-name" name="last-name" tabindex="2" value="Иванов">
             </li>
             <li class="feedback-form__item">
               <label class="feedback-form__label" for="middle-name">Отчество</label>
-              <input class="feedback-form__input feedback-form__input--text" type="text" id="middle-name" name="middle-name" tabindex="3">
+              <input class="feedback-form__input feedback-form__input--text" type="text" id="middle-name" name="middle-name" tabindex="3" value="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -52,11 +53,11 @@
           <legend class="feedback-form__legend">Контактная информация:</legend>
           <ul class="feedback-form__contact-info">
             <li class="feedback-form__item">
-              <label class="feedback-form__label" for="phone">Контактный телефон</label>
+              <label class="feedback-form__label feedback-form__label--contact-info" for="phone">Контактный телефон</label>
               <input class="feedback-form__input feedback-form__input--tel" type="tel" id="phone" name="phone" placeholder="Введите телефон" tabindex="4">
             </li>
             <li class="feedback-form__item">
-              <label class="feedback-form__label" for="email">Электронная почта</label>
+              <label class="feedback-form__label feedback-form__label--contact-info" for="email">Электронная почта</label>
               <input class="feedback-form__input feedback-form__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" tabindex="5">
             </li>
         </fieldset>
@@ -98,20 +99,20 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__emotion-info">
+        <fieldset class="feedback-form__emotion-info feedback-form__fieldset">
           <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
           <textarea class="feedback-form__input feedback-form__input--textarea" type="text" placeholder="Опишите подробно все свои восторги" tabindex="13"></textarea>
         </fieldset>
-        <button class="feedback-form__button button button--blue" tabindex="14" type="submit">Отправить отзыв</button>
+        <button class="feedback-form__button button" tabindex="14" type="submit">Отправить отзыв</button>
         <div class="feedback-form__success modal">
           <h2 class="feedback-form__modal-title">Ваш отзыв отправлен!</h2>
           <p class="feedback-form__modal-content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="feedback-form__modal-button button button--blue">ЗАкРЫТЬ ОКНО</button>
+          <button class="feedback-form__modal-button button">ЗАкРЫТЬ ОКНО</button>
         </div>
         <div class="feedback-form__failure modal">
           <h2 class="feedback-form__modal-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
           <p class="feedback-form__modal-content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="feedback-form__modal-button button button--blue">ОК</button>
+          <button class="feedback-form__modal-button button">ОК</button>
         </div>
       </form>
     </main>
@@ -131,7 +132,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <span class="copyright__text">Разработано:</span>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
