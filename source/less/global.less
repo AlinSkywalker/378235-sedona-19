@@ -1,33 +1,18 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
 body {
-  text-transform: uppercase;
   font-family: "PT Sans", "Arial", serif;
-  .content-font();
+  font-weight: normal;
+  font-size: @content-font-size;
+  line-height: @content-line-height;
+  color: @black-two;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
-  display: none;
-}
+  position: absolute;
 
-.title {
-  .title-font();
-  margin: 0;
-}
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 
-.button {
-  background-color: @light-grey-blue;
-  text-transform: uppercase;
+  clip: rect(0 0 0 0);
 }

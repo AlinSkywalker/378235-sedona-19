@@ -4,8 +4,12 @@
 }
 
 .feedback-form__legend {
-  .title-font();
   margin-bottom: 25px;
+
+  font-size: @title-font-size;
+  font-weight: bold;
+  line-height: @title-line-height;
+  color: #000000;
 }
 
 .feedback-form__item {
@@ -13,8 +17,12 @@
 }
 
 .feedback-form__attractions-info {
+  font-size: @title-font-size;
+  font-weight: bold;
+  line-height: @title-line-height;
+  color: #000000;
+
   .list-style();
-  .title-font();
 }
 
 .feedback-form__contact-info {
@@ -27,27 +35,50 @@
 }
 
 .feedback-form__impression-info {
+  font-size: @title-font-size;
+  font-weight: bold;
+  line-height: @title-line-height;
+  color: #000000;
+
   .list-style();
-  .title-font();
 }
 
 .feedback-form__person-info {
   .list-style();
-  .content-font();
+  /*.content-font();*/
 }
 
 .feedback-form__button {
   margin: 50px auto;
+
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: @light-grey-blue;
 }
 
 .feedback-form__failure {
   padding: 50px;
-  background-color: #ffffff;
+
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .feedback-form__success {
   padding: 50px;
-  background-color: #ffffff;
+
   text-align: center;
+
+  background-color: #ffffff;
+}
+
+.feedback-form__modal-button {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: @light-grey-blue;
+  outline: none;
 }
