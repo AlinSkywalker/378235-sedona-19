@@ -1,13 +1,15 @@
 .feedback-form__fieldset {
   padding: 24px 20px;
+  box-sizing: border-box;
+  margin: 0;
 
   border: none;
+  border-top: 1px solid @light-grey;
 }
 
 .feedback-form__legend {
-  margin-bottom: 25px;
-
   .title-style();
+  text-align: center;
 }
 
 .feedback-form__item {
@@ -24,9 +26,22 @@
   .list-style();
 }
 
-.feedback-form__label--contact-info {
-  display: block;
-  margin-bottom: 14px;
+.feedback-form__label {
+  margin-right: 20px;
+
+  &--contact-info {
+    display: block;
+    margin-bottom: 14px;
+  }
+}
+
+.feedback-form__item--person-info {
+  display: flex;
+  align-items: center;
+}
+
+.feedback-form__input--text {
+  flex-grow: 1;
 }
 
 .feedback-form__impression-info {
@@ -44,9 +59,24 @@
 
   .title-style();
 
-  background-color: #f2f2f2;
+  background-color: @light-grey;
   outline: none;
-  border: 4px solid #f2f2f2;
+  border: 4px solid @light-grey;
+
+  &--textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &--tel {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &--email {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .feedback-form__input:hover {
@@ -61,39 +91,139 @@
 
 .feedback-form__button {
   margin: 50px auto;
+  padding: 20px 50px;
 
-  color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
 
-  background-color: @light-grey-blue;
+  .button-style();
+}
+
+.feedback-form__button:hover {
+  .button-style-hover();
+}
+
+.feedback-form__button:active {
+  .button-style-active();
 }
 
 .feedback-form__failure {
   padding: 50px;
+  width: 100%;
 
   text-align: center;
 
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .feedback-form__success {
   padding: 50px;
+  width: 100%;
 
   text-align: center;
 
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .feedback-form__modal-button {
-  color: #ffffff;
+  padding: 20px 75px;
+
   font-weight: bold;
   text-transform: uppercase;
 
-  background-color: @light-grey-blue;
-  outline: none;
+  .button-style();
+}
+
+.feedback-form__modal-button:hover {
+  .button-style-hover();
+}
+
+.feedback-form__modal-button:active {
+  .button-style-active();
 }
 
 .feedback-form__modal-title {
   .title-style();
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__legend {
+    padding: 0 40px;
+  }
+
+  .feedback-form__fieldset--impression-info {
+    width: 50%;
+    order: 1;
+    padding-bottom: 0;
+
+    border-top: none;
+    border-right: 1px solid @light-grey;
+  }
+
+  .feedback-form__fieldset--person-info {
+    width: 50%;
+    order: 2;
+    padding-bottom: 0;
+
+    border-top: none;
+  }
+
+  .feedback-form__fieldset--contact-info {
+    width: 100%;
+    order: 3;
+  }
+
+  .feedback-form__fieldset--attractions-info {
+    width: 100%;
+    order: 4;
+  }
+
+  .feedback-form__emotion-info {
+    width: 100%;
+    order: 5;
+  }
+
+  .feedback-form__failure {
+    order: 7;
+
+    max-width: 400px;
+  }
+
+  .feedback-form__success {
+    order: 8;
+
+    max-width: 640px;
+  }
+
+  .feedback-form__modal-button {
+    padding: 20px 155px;
+  }
+
+  .feedback-form__button {
+    padding: 20px 147px;
+    order: 6;
+  }
+
+  .feedback-form__attractions-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__item--attractions-info {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__item--attractions-info {
+    width: auto;
+    flex-grow: 1;
+  }
 }

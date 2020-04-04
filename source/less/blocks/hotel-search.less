@@ -16,9 +16,23 @@
 
 .hotel-search__button {
   display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
-  color: #ffffff;
   text-decoration: none;
-  background-color: @light-grey-blue;
   font-weight: bold;
+
+  .button-style();
+}
+
+.hotel-search__button:hover {
+  .button-style-hover();
+}
+
+.hotel-search__button:active {
+  .button-style-active();
+}
+
+.hotel-search__map {
+  width: 100%;
 }

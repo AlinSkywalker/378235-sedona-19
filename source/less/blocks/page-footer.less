@@ -14,3 +14,28 @@
   color: #000000;
   line-height: 26px;
 }
+
+.page-footer__socials {
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__copyright {
+    flex-grow: 1;
+  }
+
+  .page-footer__socials {
+    flex-grow: 1;
+
+    margin-bottom: 0;
+  }
+
+  .page-footer__hashtag {
+    flex-grow: 1;
+  }
+}
