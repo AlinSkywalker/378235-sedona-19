@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   .list-style();
   display: flex;
@@ -32,6 +36,19 @@
   .button-style-active();
 }
 
+.main-nav__logo {
+  display: block;
+  margin-bottom: -40px;
+
+  text-align: center;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  bottom: 55px;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav__list {
     flex-direction: row;
@@ -61,5 +78,13 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    transform: translateX(-50%);
   }
 }
