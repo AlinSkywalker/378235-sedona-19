@@ -13,6 +13,10 @@
   padding: 20px;
 }
 
+.photos__image {
+  display: block;
+  width: 100%;
+}
 
 .photos__autor {
   .list-style();
@@ -58,21 +62,23 @@
 
 @media (min-width: @desktop-width) {
   .photos__item {
+    position: relative;
+
     padding: 0;
-    width: auto;
+    width: 33%;
     flex-grow: 1;
   }
 
-  .photos__item:nth-child(1) {
-    width: 100%;
-  }
-
   .photos__info {
-    margin-top: -45px;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin-top: -90px;
 
     color: #ffffff;
 
-    background-color: rgba(@light-grey, 0.3);
+    background-color: rgba(#818181, 0.3);
   }
 
   .photos__likes {

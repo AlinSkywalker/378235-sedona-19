@@ -6,85 +6,84 @@
   .list-style();
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
-  //padding-top: 20px;
-  //padding-bottom: 20px;
   width: 100%;
 
   font-size: @title-font-size;
   font-weight: bold;
   line-height: @title-line-height;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 25%;
+
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 .main-nav__item-link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   text-decoration: none;
   .button-style();
-}
 
-.main-nav__item-link:hover {
-  .button-style-hover();
-}
+  @media (min-width: @tablet-width) {
+    color: #000000;
 
-.main-nav__item-link:active {
-  .button-style-active();
+    background-color: #ffffff;
+  }
+
+  :hover {
+    .button-style-hover();
+
+    @media (min-width: @tablet-width) {
+      color: @light-grey-blue;
+
+      background-color: #ffffff;
+    }
+  }
+
+  :active {
+    .button-style-active();
+
+    @media (min-width: @tablet-width) {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+    }
+  }
 }
 
 .main-nav__logo {
   display: block;
-  margin-bottom: -40px;
+  margin-bottom: -35px;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    transform: translateX(-50%);
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   right: 0;
   bottom: 55px;
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav__list {
-    flex-direction: row;
-  }
-
-  .main-nav__item {
-    width: 25%;
-  }
-
-  .main-nav__item-link {
-    color: #000000;
-
-    background-color: #ffffff;
-  }
-
-  .main-nav__item-link:hover {
-    color: @light-grey-blue;
-
-    background-color: #ffffff;
-  }
-
-  .main-nav__item-link:active {
-    color: rgba(0, 0, 0, 0.3);
-
-    background-color: #ffffff;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: @tablet-width) {
     display: none;
-  }
-
-  .main-nav__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 20;
-    transform: translateX(-50%);
   }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,10 +32,10 @@
     <main class="page-main">
       <h1 class="visually-hidden">Туры в седону</h1>
       <section class="intro">
-        <div class="intro__header">
+        <div class="intro__header intro__header--index">
           <img class="intro__text" src="img/text-sedona-index.svg" width="281" height="214" alt="Sedona">
         </div>
-        <div class="intro__wrapper">
+        <div class="intro__wrapper  intro__wrapper--index">
           <h2 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
           <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
@@ -44,25 +45,38 @@
         <div class="reasons__list">
           <div class="reasons__item reasons__item--blue">
             <div class="reasons__info reasons__info--blue">
-              <div class="reasons__info-wrapper">
+              <div class="reasons__info-wrapper reasons__info-wrapper--true-city">
                 <h3 class="reasons__title reasons__title--white">НАСТОЯЩИЙ ГОРОДОК</h3>
                 <p class="reasons__number">— №1 —</p>
                 <p class="reasons__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
-              <img class="reasons__photo reasons__photo--true-city" src="https://via.placeholder.com/150x100" alt="Фото городка">
+              <img class="reasons__photo reasons__photo--true-city"
+                    srcset="img/main-city-mobile@1x.jpg 320w,
+                            img/main-city-tablet@1x.jpg 480w,
+                            img/main-city-desktop@1x.jpg 800w"
+                    sizes="(max-width: 320px) 280px,
+                           (max-width: 768px) 440px,
+                           800px"
+                  src="img/main-city-mobile@1x.jpg" alt="Фото городка">
             </div>
             <div class="reasons__details">
               <div class="reasons__detail-item">
-                <h4 class="reasons__detail-title">Жилье</h4>
-                <p class="reasons__detail-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <div class="reasons__detail-wrapper">
+                  <h4 class="reasons__detail-title">Жилье</h4>
+                  <p class="reasons__detail-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
               </div>
               <div class="reasons__detail-item">
-                <h4 class="reasons__detail-title">СУВЕНИРЫ</h4>
-                <p class="reasons__detail-description">Не только китайского, но и местного производства!</p>
+                <div class="reasons__detail-wrapper">
+                  <h4 class="reasons__detail-title">СУВЕНИРЫ</h4>
+                  <p class="reasons__detail-description">Не только китайского, но и местного производства!</p>
+                </div>
               </div>
               <div class="reasons__detail-item">
-                <h4 class="reasons__detail-title">ЕДА</h4>
-                <p class="reasons__detail-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <div class="reasons__detail-wrapper">
+                  <h4 class="reasons__detail-title">ЕДА</h4>
+                  <p class="reasons__detail-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                </div>
               </div>
             </div>
           </div>
@@ -73,26 +87,26 @@
                 <p class="reasons__number">— №2 —</p>
                 <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="reasons__photo reasons__photo--diablo-bridge" src="https://via.placeholder.com/150x100" alt="Фото моста дьявола">
+              <img class="reasons__photo reasons__photo--diablo-bridge" src="img/main-bridge-mobile@1x.jpg" alt="Фото моста дьявола">
             </div>
           </div>
           <div class="reasons__items-wrapper">
-            <div class="reasons__item reasons__item--gray">
-              <div class="reasons__info">
+            <div class="reasons__item reasons__item--grey">
+              <div class="reasons__info reasons__info--grey">
                 <h3 class="reasons__title reasons__title--black">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                 <p class="reasons__number">— №3 —</p>
                 <p class="reasons__description">ВСЕ интересные места находятся очень близко</p>
               </div>
             </div>
-            <div class="reasons__item reasons__item--gray">
-              <div class="reasons__info">
+            <div class="reasons__item reasons__item--grey">
+              <div class="reasons__info reasons__info--grey">
                 <h3 class="reasons__title reasons__title--black">КРАСИВАЯ ДОРОГА</h3>
                 <p class="reasons__number">— №4 —</p>
                 <p class="reasons__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
               </div>
             </div>
-            <div class="reasons__item reasons__item--gray">
-              <div class="reasons__info">
+            <div class="reasons__item reasons__item--grey">
+              <div class="reasons__info reasons__info--grey">
                 <h3 class="reasons__title reasons__title--black">МАЛО ТУРИСТОВ</h3>
                 <p class="reasons__number">— №5 —</p>
                 <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
@@ -102,9 +116,13 @@
         </div>
       </section>
       <section class="hotel-search">
-        <h2 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        <div class="hotel-search__wrapper">
+          <h2 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="hotel-search__button button" href="#">Найти гостиницу</a>
+        </div>
+
+
         <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564474.505247366!2d-112.00279115033129!3d34.87271362170046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462035967330"
           allowfullscreen>
         </iframe>
