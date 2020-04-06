@@ -5,13 +5,87 @@
 .photos__name {
   font-weight: bold;
   color: #000000;
+
+  .list-style();
 }
 
 .photos__item {
   padding: 20px;
 }
 
+.photos__image {
+  display: block;
+  width: 100%;
+}
+
+.photos__autor {
+  .list-style();
+}
+
 .photos__likes {
   font-weight: bold;
   color: #000000;
+}
+
+.photos__likes-info {
+  margin-right: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item {
+    padding: 0;
+    width: 50%;
+  }
+
+  .photos__item:nth-child(1) {
+    width: 100%;
+  }
+
+  .photos__info {
+    background-color: @light-grey;
+    display: flex;
+    align-items: center;
+  }
+
+  .photos__name-author {
+    flex-grow: 1;
+    padding: 20px 0 20px 20px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__item {
+    position: relative;
+
+    padding: 0;
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .photos__info {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    margin-top: -90px;
+
+    color: #ffffff;
+
+    background-color: rgba(#818181, 0.3);
+  }
+
+  .photos__likes {
+    color: #ffffff;
+  }
+
+  .photos__name {
+    color: #ffffff;
+  }
 }

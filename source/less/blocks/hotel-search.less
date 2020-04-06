@@ -1,7 +1,4 @@
 .hotel-search {
-  padding-top: 30px;
-  padding-bottom: 50px;
-
   text-align: center;
 
   background-color: #ffffff;
@@ -16,9 +13,33 @@
 
 .hotel-search__button {
   display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
-  color: #ffffff;
   text-decoration: none;
-  background-color: @light-grey-blue;
   font-weight: bold;
+
+  .button-style();
+
+  &:hover {
+    .button-style-hover();
+  }
+
+  &:active {
+    .button-style-active();
+  }
+}
+
+.hotel-search__map {
+  width: 100%;
+}
+
+.hotel-search__wrapper {
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 33px 0 40px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 460px;
+  }
 }
