@@ -15,7 +15,7 @@
             <a class="main-nav__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__item-link">Фото и видео</a>
+            <a class="main-nav__item-link main-nav__item-link--active">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="form.html">Форма отзыва</a>
@@ -33,7 +33,7 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="intro">
         <div class="intro__header">
-          <img class="intro__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+          <img class="intro__header-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
         </div>
         <div class="intro__wrapper  intro__wrapper--photo">
           <h2 class="intro__title">Фото и видео</h2>
@@ -44,73 +44,79 @@
         <h2 class="visually-hidden">Список фото</h2>
         <ul class="photo__list photos">
           <li class="photos__item">
-            <div class="photos__image-wrapper">
-              <a href=# class ="photos__image-link">
-                <img class="photos__image" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы">
-              </a>
-
-            </div>
-            <div class="photos__info">
-              <div class="photos__name-author">
-                <h3 class="photos__name">неродные просторы</h3>
-                <p class="photos__autor">Автор фото: Борис</p>
+            <div class="photos__item-wrapper">
+              <div class="photos__image-wrapper">
+                <a href=# class ="photos__image-link">
+                  <img class="photos__image" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы" width="280" height="280">
+                </a>
               </div>
-              <div class="photos__likes-info">
-                <button class="photos__like-button">Лайкнуть</button>
-                <span class="photos__likes">1350</span>
-              </div>
-            </div>
-          </li>
-          <li class="photos__item">
-            <div class="photos__image-wrapper">
-              <a href=# class ="photos__image-link">
-                <img class="photos__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
-              </a>
-            </div>
-            <div class="photos__info">
-              <div class="photos__name-author">
-                <h3 class="photos__name">Местная растительность</h3>
-                <p class="photos__autor">Автор фото: Сергей</p>
-              </div>
-              <div class="photos__likes-info">
-                <button class="photos__like-button">Лайкнуть</button>
-                <span class="photos__likes">143</span>
+              <div class="photos__info">
+                <div class="photos__name-author">
+                  <h3 class="photos__name">неродные просторы</h3>
+                  <p class="photos__autor">Автор фото: Борис</p>
+                </div>
+                <div class="photos__likes-info">
+                  <button class="photos__like-button">Like</button>
+                  <span class="photos__likes">1350</span>
+                </div>
               </div>
             </div>
           </li>
           <li class="photos__item">
-            <div class="photos__image-wrapper">
-              <a href=# class ="photos__image-link">
-                <img class="photos__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
-              </a>
-            </div>
-            <div class="photos__info">
-              <div class="photos__name-author">
-                <h3 class="photos__name">Дорога на север</h3>
-                <p class="photos__autor">Автор фото: Петр</p>
+            <div class="photos__item-wrapper">
+              <div class="photos__image-wrapper">
+                <a href=# class ="photos__image-link">
+                  <img class="photos__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
+                </a>
               </div>
-              <div class="photos__likes-info">
-                <button class="photos__like-button">Лайкнуть</button>
-                <span class="photos__likes">96</span>
+              <div class="photos__info">
+                <div class="photos__name-author">
+                  <h3 class="photos__name">Местная растительность</h3>
+                  <p class="photos__autor">Автор фото: Сергей</p>
+                </div>
+                <div class="photos__likes-info">
+                  <button class="photos__like-button">Like</button>
+                  <span class="photos__likes">143</span>
+                </div>
               </div>
             </div>
           </li>
           <li class="photos__item">
-            <div class="photos__image-wrapper">
-              <a href=# class ="photos__image-link">
-                <img class="photos__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
-              </a>
+            <div class="photos__item-wrapper">
+              <div class="photos__image-wrapper">
+                <a href=# class ="photos__image-link">
+                  <img class="photos__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
+                </a>
+              </div>
+              <div class="photos__info">
+                <div class="photos__name-author">
+                  <h3 class="photos__name">Дорога на север</h3>
+                  <p class="photos__autor">Автор фото: Петр</p>
+                </div>
+                <div class="photos__likes-info">
+                  <button class="photos__like-button">Like</button>
+                  <span class="photos__likes">96</span>
+                </div>
+              </div>
             </div>
-            <div class="photos__info">
-              <div class="photos__name-author">
-                <h3 class="photos__name">Мост дьявола</h3>
-                <p class="photos__autor">Автор фото: Антон</p>
+          </li>
+          <li class="photos__item">
+            <div class="photos__item-wrapper">
+              <div class="photos__image-wrapper">
+                <a href=# class ="photos__image-link">
+                  <img class="photos__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280">
+                </a>
               </div>
-              <div class="photos__likes-info">
-                <button class="photos__like-button">Лайкнуть</button>
-                <span class="photos__likes">254</span>
+              <div class="photos__info">
+                <div class="photos__name-author">
+                  <h3 class="photos__name">Мост дьявола</h3>
+                  <p class="photos__autor">Автор фото: Антон</p>
+                </div>
+                <div class="photos__likes-info">
+                  <button class="photos__like-button">Like</button>
+                  <span class="photos__likes">254</span>
+                </div>
               </div>
-
             </div>
           </li>
         </ul>
@@ -120,7 +126,7 @@
         <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__block">
           <div class="video__content-wrapper">
-            <img class="video__content" src="img/video-mobile@1x.jpg" alt="Превью видео"/>
+            <img class="video__content" src="img/video-mobile@1x.jpg" alt="Превью видео" width="320" height="201"/>
           </div>
           <div class="video__controls">
             <div class="video__toggle-control">

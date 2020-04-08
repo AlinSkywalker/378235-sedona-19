@@ -63,6 +63,24 @@
   }
 }
 
+.main-nav__item-link--active {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      color: #604e43;
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet-width) {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+}
+
 .main-nav__logo {
   display: block;
   margin-bottom: -35px;

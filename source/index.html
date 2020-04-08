@@ -11,13 +11,13 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link">ГЛАВНАЯ</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__item-link main-nav__item-link--active">ГЛАВНАЯ</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="photo.html">ФОТО И ВИДЕО</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a class="main-nav__item-link" href="form.html">ФОРМА ОТЗЫВА</a>
           </li>
           <li class="main-nav__item">
@@ -33,7 +33,7 @@
       <h1 class="visually-hidden">Туры в седону</h1>
       <section class="intro">
         <div class="intro__header intro__header--index">
-          <img class="intro__text" src="img/text-sedona-index.svg" width="281" height="214" alt="Sedona">
+          <img class="intro__header-text--index" src="img/text-sedona-index.svg" width="281" height="214" alt="Sedona">
         </div>
         <div class="intro__wrapper  intro__wrapper--index">
           <h2 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
@@ -60,19 +60,19 @@
                   src="img/main-city-mobile@1x.jpg" alt="Фото городка">
             </div>
             <div class="reasons__details">
-              <div class="reasons__detail-item">
+              <div class="reasons__detail-item reasons__detail-item--motel">
                 <div class="reasons__detail-wrapper">
                   <h4 class="reasons__detail-title">Жилье</h4>
                   <p class="reasons__detail-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
               </div>
-              <div class="reasons__detail-item">
+              <div class="reasons__detail-item reasons__detail-item--not-chineese">
                 <div class="reasons__detail-wrapper">
                   <h4 class="reasons__detail-title">СУВЕНИРЫ</h4>
                   <p class="reasons__detail-description">Не только китайского, но и местного производства!</p>
                 </div>
               </div>
-              <div class="reasons__detail-item">
+              <div class="reasons__detail-item reasons__detail-item--burger">
                 <div class="reasons__detail-wrapper">
                   <h4 class="reasons__detail-title">ЕДА</h4>
                   <p class="reasons__detail-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
@@ -87,7 +87,14 @@
                 <p class="reasons__number">— №2 —</p>
                 <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="reasons__photo reasons__photo--diablo-bridge" src="img/main-bridge-mobile@1x.jpg" alt="Фото моста дьявола">
+              <img class="reasons__photo reasons__photo--diablo-bridge"
+                srcset="img/main-bridge-mobile@1x.jpg 320w,
+                img/main-bridge-tablet@1x.jpg 480w,
+                img/main-bridge-desktop@1x.jpg 800w"
+                sizes="(max-width: 320px) 280px,
+                  (max-width: 768px) 440px,
+                  800px"
+                alt="Фото моста дьявола">
             </div>
           </div>
           <div class="reasons__items-wrapper">
