@@ -1,21 +1,42 @@
 .photos {
   .list-style();
+  list-style: none;
+  margin: 0 auto;
 }
 
 .photos__name {
+  .list-style();
+
   font-weight: bold;
   color: #000000;
-
-  .list-style();
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .photos__item {
-  padding: 20px;
+  padding-top: 16px;
+  padding-bottom: 26px;
+
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .photos__image {
   display: block;
-  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 267px;
+  }
+}
+
+.photos__name-author {
+  margin-top: 14px;
+  margin-bottom: 7px;
 }
 
 .photos__autor {
@@ -29,12 +50,48 @@
 
 .photos__likes-info {
   margin-right: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.photos__item-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: unset;
+  }
+}
+
+.photos__image--first {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.photos__like-button {
+  font-size: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.photos__like-icon {
+  fill: #000000;
+  fill-opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill-opacity: 1;
+    fill: #ffffff;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .photos {
     display: flex;
     flex-wrap: wrap;
+    max-width: 648px;
+    margin: 0 auto;
   }
 
   .photos__item {
@@ -54,31 +111,36 @@
 
   .photos__name-author {
     flex-grow: 1;
-    padding: 20px 0 20px 20px;
+    padding: 1px 0 9px 20px;
 
     text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .photos {
+    max-width: 1200px;
+  }
+
   .photos__item {
     position: relative;
 
     padding: 0;
-    width: 33%;
+    width: 33.33%;
     flex-grow: 1;
   }
 
   .photos__info {
     position: absolute;
     bottom: 0;
+    z-index: 1;
 
     width: 100%;
-    margin-top: -90px;
+    //margin-top: -90px;
 
     color: #ffffff;
 
-    background-color: rgba(#818181, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photos__likes {

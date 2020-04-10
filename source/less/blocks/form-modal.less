@@ -27,6 +27,8 @@
 }
 
 .form-modal__modal-button {
+  .button-style();
+
   padding: 15px 0;
 
   width: 100%;
@@ -36,8 +38,6 @@
   text-transform: uppercase;
   text-align: center;
 
-  .button-style();
-
   &:hover {
     .button-style-hover();
   }
@@ -45,10 +45,16 @@
   &:active {
     .button-style-active();
   }
+
+  &--success {
+    margin-top: 0;
+  }
 }
 
 .form-modal__modal-title {
   .title-style();
+
+  margin-bottom: 40px;
 }
 
 .form-modal__wrapper {
@@ -60,6 +66,7 @@
 
     @media (min-width: @tablet-width) {
       max-width: 458px;
+      padding: 49px 0 35px;
     }
   }
 
@@ -69,6 +76,16 @@
 
     @media (min-width: @tablet-width) {
       max-width: 277px;
+      padding: 64px 0 49px;
     }
+  }
+}
+
+.form-modal__modal-footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 95px;
   }
 }
