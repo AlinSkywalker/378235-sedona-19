@@ -15,7 +15,7 @@
 
 .photos__item {
   padding-top: 16px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid @light-grey;
 
@@ -35,12 +35,13 @@
 }
 
 .photos__name-author {
-  margin-top: 17px;
+  margin-top: 15px;
   margin-bottom: 7px;
 }
 
 .photos__autor {
   .list-style();
+  text-transform: initial;
 }
 
 .photos__likes {
@@ -52,6 +53,11 @@
   margin-right: 38px;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    min-width: 85px;
+  }
 }
 
 .photos__item-wrapper {
@@ -70,10 +76,17 @@
 }
 
 .photos__like-button {
+  .list-style();
+  display: block;
+  margin-right: 14px;
   font-size: 0;
   border: none;
   outline: none;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 11px;
+  }
 }
 
 .photos__like-icon {
