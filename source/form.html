@@ -9,7 +9,15 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню
+          <svg class="main-nav__toggle-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+            <g>
+              <rect width="22.928" height="3.964"/>
+              <rect y="9.009" width="22.928" height="3.964"/>
+              <rect y="18.018" width="22.928" height="3.964"/>
+            </g>
+          </svg>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="index.html">Главная</a>
@@ -32,12 +40,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="intro">
-        <div class="intro__header">
+        <div class="intro__header intro__header--form">
           <img class="intro__header-text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
         </div>
         <div class="intro__wrapper intro__wrapper--form">
           <h2 class="intro__title">Оставьте свой отзыв</h2>
-          <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="intro__text intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <form class="feedback-form"  action="https://echo.htmlacademy.ru">
@@ -64,10 +72,12 @@
             <li class="feedback-form__item feedback-form__item--tel">
               <label class="feedback-form__label feedback-form__label--contact-info" for="phone"><span class="feedback-form__phone-part">Контактный </span>телефон*:</label>
               <input class="feedback-form__input feedback-form__input--tel" type="tel" id="phone" name="phone" placeholder="Введите телефон" tabindex="4" required>
+              <div class="feedback-form__input-icon  feedback-form__input-icon--tel"></div>
             </li>
             <li class="feedback-form__item feedback-form__item--email">
               <label class="feedback-form__label feedback-form__label--contact-info" for="email">Электронная почта*:</label>
               <input class="feedback-form__input feedback-form__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" tabindex="5" required>
+              <div class="feedback-form__input-icon  feedback-form__input-icon--email"></div>
             </li>
           </ul>
         </fieldset>

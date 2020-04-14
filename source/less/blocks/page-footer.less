@@ -9,11 +9,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    padding: 32px 25px 25px;
+    padding: 32px 59px 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 25px 25px;
+    padding: 47px 119px 25px;
+
+    &--index {
+      padding: 31px 59px 25px;
+    }
   }
 }
 
@@ -31,17 +35,11 @@
 
 .page-footer__socials {
   margin-bottom: 39px;
-  margin-top: 36px;
+  margin-top: 37px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     margin: 0 auto;
-    max-width: 251px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-footer__copyright {
-    //flex-grow: 1;
+    max-width: 254px;
   }
 }

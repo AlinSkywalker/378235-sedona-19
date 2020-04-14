@@ -5,12 +5,13 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 70px;
+    padding-top: 68px;
     padding-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 85px;
+    padding-top: 71px;
+    padding-bottom: 87px;
   }
 }
 
@@ -31,7 +32,12 @@
 
   @media (min-width: @tablet-width) {
     max-width: 439px;
-    margin-bottom: 77px;
+    margin-bottom: 73px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
   }
 }
 
@@ -52,12 +58,12 @@
 
   width: 100%;
   height: 45px;
-  padding: 0 30px;
+  padding: 0 24px;
   box-sizing: border-box;
 
   text-align: left;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -66,7 +72,7 @@
     order: 2;
     width: auto;
     height: auto;
-    padding: 0 32px;
+    padding: 0 38px;
     background-color: transparent;
   }
 }
@@ -77,8 +83,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 22px 19px;
-  margin: 0 22px;
+  padding: 23px 24px;
+  margin: 0 20px;
 
   background-color: @light-grey;
 
@@ -88,14 +94,20 @@
   @media (min-width: @tablet-width) {
     //height: 93px;
     top: -93px;
-    padding: 36px 35px;
+    padding: 36px 41px 36px 35px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 35px 44px 36px 35px;
   }
 }
 
 
 .video__button {
+  .list-style();
+
   color: @video-button-color;
   font-size: 0;
   outline: none;
@@ -107,6 +119,10 @@
     text-align: left;
   }
 
+  &--subtitles {
+    margin-right: 30px;
+  }
+
   @media (min-width: @tablet-width) {
     &--replay {
       flex-grow: 0;
@@ -115,7 +131,6 @@
 
     &--subtitles {
       order: 3;
-      margin-right: 17px;
     }
 
     &--fullscreen {
@@ -150,7 +165,7 @@
   background-color: #ffffff;
   opacity: 0.2;
   position: relative;
-  top: 21px;
+  top: 23px;
 
   @media (min-width: @tablet-width) {
     position: initial;
@@ -163,10 +178,16 @@
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  left: 23%;
-  top: 18px;
+  left: 21%;
+  top: 19px;
 
   @media (min-width: @tablet-width) {
+    left: 33%;
+    top: -3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 25%;
     top: -4px;
   }
 }
