@@ -33,6 +33,7 @@
 
   @media (min-width: @tablet-width) {
     width: 25%;
+    margin-bottom: 0;
 
     font-size: 14px;
     line-height: 26px;
@@ -40,11 +41,11 @@
     box-shadow: none;
 
     &:nth-child(2) {
-      margin-right: 70px;
+      margin-right: 78px;
     }
 
     &:nth-child(3) {
-      margin-left: 70px;
+      margin-left: 80px;
     }
   }
 
@@ -146,4 +147,16 @@
 
 .main-nav__toggle-icon {
   fill: @light-grey-blue;
+}
+
+.main-nav__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
+  }
 }
