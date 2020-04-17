@@ -1,5 +1,6 @@
 .intro {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .intro__title {
@@ -29,6 +30,10 @@
   background-color: #75525a;
   padding-top: 50px;
   padding-bottom: 60px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");

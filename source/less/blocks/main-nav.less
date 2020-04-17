@@ -131,22 +131,23 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 14px;
-  bottom: 52px;
+  right: 20px;
+  top: 17px;
+
+  width: 23px;
+  height: 23px;
 
   font-size: 0;
 
   background-color: transparent;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
   outline: none;
   border: none;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
-}
-
-.main-nav__toggle-icon {
-  fill: @light-grey-blue;
 }
 
 .main-nav__logo-image {
@@ -159,4 +160,11 @@
     width: 187px;
     height: 97px;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  right: 20px;
+  top: auto;
+  bottom: 53px;
+  background-image: url("../img/icon-menu.svg");
 }
