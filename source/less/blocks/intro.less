@@ -48,11 +48,19 @@
   &--photo {
     background-position: 50% bottom, 50% 100%;
     background-size: cover, auto;
+
+    @media (min-width: @tablet-width) {
+      background-size: contain, cover;
+    }
   }
 
   &--form {
     background-position: 50% bottom, 50% 100%;
     background-size: cover, auto;
+
+    @media (min-width: @tablet-width) {
+      background-size: contain, cover;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -63,16 +71,6 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
-    }
-
-    &--photo {
-      background-position: 50% bottom, 50% 100%;
-      background-size: contain, cover;
-    }
-
-    &--form {
-      background-position: 50% bottom, 50% 100%;
-      background-size: contain, cover;
     }
   }
 
