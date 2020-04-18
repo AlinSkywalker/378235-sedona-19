@@ -9,15 +9,7 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню
-          <svg class="main-nav__toggle-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-            <g>
-              <rect width="22.928" height="3.964"/>
-              <rect y="9.009" width="22.928" height="3.964"/>
-              <rect y="18.018" width="22.928" height="3.964"/>
-            </g>
-          </svg>
-        </button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__item-link" href="index.html">Главная</a>
@@ -62,7 +54,7 @@
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                      <img class="photos__image photos__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="неродные просторы" width="280" height="280">
+                      <img class="photos__image photos__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="неродные просторы">
                   </picture>
                 </a>
               </div>
@@ -195,7 +187,7 @@
         <div class="video__block">
           <div class="video__content-wrapper">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, imgvideo-desktop@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                 <img class="video__content" src="img/video-mobile@1x.jpg"  srcset="img/video-mobile@2x.jpg 2x" alt="Превью видео" width="280" height="280">
             </picture>
@@ -271,5 +263,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
