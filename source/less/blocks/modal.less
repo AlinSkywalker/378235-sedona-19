@@ -1,3 +1,14 @@
 .modal {
-  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: @desktop-width) {
+    top: 150vh;
+  }
+
+  &--close {
+    display: none;
+  }
 }
