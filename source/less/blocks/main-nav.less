@@ -173,11 +173,13 @@
 }
 
 .main-nav--close:not(.main-nav--nojs) .main-nav__list {
-  position: absolute;
+  @media (max-width: @mobile-width) {
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 
-  clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0);
+  }
 }
