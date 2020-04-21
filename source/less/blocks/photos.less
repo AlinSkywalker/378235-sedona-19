@@ -80,10 +80,13 @@
   display: block;
   margin-right: 14px;
   margin-bottom: 6px;
+
   font-size: 0;
+
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     margin-right: 11px;
@@ -121,6 +124,10 @@
     background-color: @light-grey;
     display: flex;
     align-items: center;
+
+    &--dark {
+      background-color: #eaeaea;
+    }
   }
 
   .photos__name-author {
