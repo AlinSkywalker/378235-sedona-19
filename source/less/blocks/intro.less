@@ -1,5 +1,6 @@
 .intro {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .intro__title {
@@ -22,25 +23,21 @@
 }
 
 .intro__header {
-  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 50% bottom, 50% 20%;
-  background-size: cover, cover;
-  background-color: #75525a;
+  position: relative;
+
   padding-top: 50px;
   padding-bottom: 60px;
+  overflow: hidden;
 
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: contain, cover;
-    padding-top: 93px;
-    padding-bottom: 109px;
-  }
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
+  background-color: #75525a;
 
-  @media (min-width: @desktop-width) {
-    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
-    padding-top: 101px;
-    padding-bottom: 114px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
   }
 
   &--index {
@@ -53,14 +50,79 @@
     }
   }
 
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: contain, 100% 100%;
+    padding-top: 93px;
+    padding-bottom: 109px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    padding-top: 101px;
+    padding-bottom: 114px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
   &--photo {
     background-position: 50% bottom, 50% 100%;
-    background-size: contain, auto;
+    background-size: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 200%;
+    }
+
+    @media (min-width: @tablet-width) {
+      background-size: cover;
+    }
   }
 
   &--form {
     background-position: 50% bottom, 50% 100%;
-    background-size: contain, auto;
+    background-size: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 200%;
+    }
+
+    @media (min-width: @tablet-width) {
+      background-size: cover;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+
+    display: block;
+    width: 101%;
+    height: 70px;
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: 100%;
+
+    @media (min-width: @tablet-width) {
+      bottom: -2px;
+
+      height: 100px;
+
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 }
 
