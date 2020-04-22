@@ -9,7 +9,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
-var jsmin = require("gulp-jsmin");
+var uglify = require('gulp-uglify');
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -91,6 +91,13 @@ gulp.task("refresh", function (done) {
   done();
   });
 
+gulp.task('gulp-uglify', function(){
+  return gulp.src('source/js/*.js')
+  .pipe(uglify())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('build/js'))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -105,5 +112,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "gulp-uglify", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
