@@ -22,7 +22,7 @@ if (btnConfirmForm != null) {
 }
 
 if (modalSuccess != null) {
-  var closemModalSuccess = modalSuccess.querySelector("#close-modal");
+  var closemModalSuccess = modalSuccess.querySelector("#close-modal-success");
   closemModalSuccess.addEventListener("click", function (event) {
     event.preventDefault();
     modalSuccess.classList.add("modal--close");
@@ -30,7 +30,7 @@ if (modalSuccess != null) {
 }
 
 if (modalError != null) {
-  var closeModalError = modalError.querySelector("#close-modal");
+  var closeModalError = modalError.querySelector("#close-modal-failure");
   closeModalError.addEventListener("click", function (event) {
     event.preventDefault();
     modalError.classList.add("modal--close");
