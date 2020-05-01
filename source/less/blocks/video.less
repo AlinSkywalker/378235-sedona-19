@@ -112,13 +112,22 @@
   display: block;
   height: 20px;
 
-  color: @video-button-color;
+  fill: @video-button-color;
   font-size: 0;
 
   outline: none;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 
+  &:hover {
+    fill: @black-two;
+  }
+
+  &:active {
+    fill: @black-two;
+    fill-opacity: 0.3;
+  }
 
   &--replay {
     flex-grow: 1;
@@ -130,6 +139,16 @@
   }
 
   @media (min-width: @tablet-width) {
+    fill: #ffffff;
+
+    &:hover {
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+
     &--replay {
       flex-grow: 0;
       order: 1;
@@ -142,14 +161,6 @@
     &--fullscreen {
       order: 4;
     }
-  }
-}
-
-.video__button-icon {
-  fill: @video-button-color;
-
-  @media (min-width: @tablet-width) {
-    fill: #ffffff;
   }
 }
 
