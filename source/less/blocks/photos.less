@@ -2,6 +2,17 @@
   .list-style();
   list-style: none;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .photos__name {
@@ -11,16 +22,40 @@
   color: #000000;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photos__item {
-  padding-top: 16px;
-  padding-bottom: 22px;
+  padding-top: 21px;
+  padding-bottom: 17px;
 
   border-bottom: 1px solid @light-grey;
 
+  &:nth-child(1) {
+    border-top: 1px solid @light-grey;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+      width: 100%;
+    }
+  }
+
   @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 50%;
+
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    padding: 0;
+    width: 33.33%;
+    flex-grow: 1;
   }
 }
 
@@ -37,16 +72,34 @@
 .photos__name-author {
   margin-top: 15px;
   margin-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 1;
+    padding: 0 0 10px 20px;
+
+    text-align: left;
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      padding: 0 0 12px 20px;
+    }
+  }
 }
 
 .photos__autor {
   .list-style();
+
   text-transform: initial;
 }
 
 .photos__likes {
   font-weight: bold;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photos__likes-info {
@@ -103,24 +156,8 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .photos {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 648px;
-    margin: 0 auto;
-  }
-
-  .photos__item {
-    padding: 0;
-    width: 50%;
-  }
-
-  .photos__item:nth-child(1) {
-    width: 100%;
-  }
-
-  .photos__info {
+.photos__info {
+  @media (min-width: @tablet-width) {
     background-color: @light-grey;
     display: flex;
     align-items: center;
@@ -130,45 +167,15 @@
     }
   }
 
-  .photos__name-author {
-    flex-grow: 1;
-    padding: 0 0 9px 20px;
-
-    text-align: left;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .photos {
-    max-width: 1200px;
-  }
-
-  .photos__item {
-    position: relative;
-
-    padding: 0;
-    width: 33.33%;
-    flex-grow: 1;
-  }
-
-  .photos__info {
+  @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
     z-index: 1;
 
     width: 100%;
-    //margin-top: -90px;
 
     color: #ffffff;
 
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .photos__likes {
-    color: #ffffff;
-  }
-
-  .photos__name {
-    color: #ffffff;
   }
 }

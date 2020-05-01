@@ -1,5 +1,5 @@
 .hotel-search {
-  padding-bottom: 13px;
+  padding-bottom: 7px;
 
   text-align: center;
 
@@ -16,6 +16,8 @@
 }
 
 .hotel-search__title {
+  .list-style();
+
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -47,6 +49,10 @@
   &:active {
     .button-style-active();
   }
+
+  &:disabled {
+    .button-style-disabled();
+  }
 }
 
 .hotel-search__map {
@@ -73,7 +79,9 @@
 }
 
 .hotel-search__info {
-  margin-top: 17px;
+  .list-style();
+
+  margin-top: 20px;
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {

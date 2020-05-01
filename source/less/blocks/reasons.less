@@ -26,7 +26,8 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 0 45px;
+    flex-grow: 1;
+    padding: 45px;
     width: 33.33%;
 
     &:nth-child(2) {
@@ -53,10 +54,6 @@
 .reasons__title--white {
   color: #ffffff;
 
-  /*@media (min-width: @tablet-width) {
-    margin: 0 2px;
-  }*/
-
   @media (min-width: @desktop-width) {
     margin: 0 39px;
   }
@@ -79,15 +76,17 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    padding-top: 28px;
-    padding-left: 0;
     display: flex;
-    text-align: center;
+    padding-top: 30px;
+    padding-left: 0;
     padding-bottom: 11px;
+
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
     padding-bottom: 29px;
+    padding-top: 27px;
   }
 }
 
@@ -150,12 +149,13 @@
     height: 0;
     left: 0;
     top: 0;
+
+    box-sizing: border-box;
+
     border-top: 15px solid #ffffff;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: none;
-
-    box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
       border: none;
@@ -172,6 +172,7 @@
     @media (min-width: @tablet-width) {
       padding-bottom: 0;
       max-width: 158px;
+
       border: none;
     }
 
@@ -191,6 +192,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    flex-grow: 1;
   }
 
   &--true-city {
@@ -269,7 +271,6 @@
   }
 
   &--true-city {
-    //background: #e5af94   50% 50%  cover;
     background-image: url("../img/main-city-mobile@1x.jpg");
     background-color: #e5af94;
     background-repeat: no-repeat;
@@ -298,7 +299,6 @@
   }
 
   &--diablo-bridge {
-    //background: #edbbb1 url("../img/main-bridge-mobile@1x.jpg") no-repeat 50% 50%;
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-color: #edbbb1;
     background-repeat: no-repeat;
@@ -310,6 +310,8 @@
     }
 
     @media (min-width: @tablet-width) {
+      order: 0;
+
       background-image: url("../img/main-bridge-tablet@1x.jpg");
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -328,6 +330,8 @@
 }
 
 .reasons__number {
+  .list-style();
+
   margin-top: 7px;
   margin-bottom: 14px;
 
@@ -415,24 +419,14 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .reasons__info--blue {
+.reasons__info--blue {
+  @media (min-width: @tablet-width) {
     display: flex;
   }
+}
 
-  .reasons__photo--diablo-bridge {
-    order: 0;
-  }
-
-  .reasons__info-wrapper {
-    flex-grow: 1;
-  }
-
-  .reasons__items-wrapper {
+.reasons__items-wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
-  }
-
-  .reasons__item--grey {
-    flex-grow: 1;
   }
 }

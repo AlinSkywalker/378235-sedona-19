@@ -46,6 +46,10 @@
     .button-style-active();
   }
 
+  &:disabled {
+    .button-style-disabled();
+  }
+
   &--success {
     margin-top: 0;
   }
@@ -53,6 +57,7 @@
 
 .form-modal__modal-title {
   .title-style();
+  .list-style();
 
   margin-bottom: 40px;
 }
@@ -88,4 +93,8 @@
   @media (min-width: @tablet-width) {
     padding: 45px 95px;
   }
+}
+
+.form-modal__modal-content {
+  .list-style();
 }
