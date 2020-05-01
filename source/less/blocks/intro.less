@@ -21,6 +21,12 @@
       line-height: 26px;
     }
   }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 33px;
+    }
+  }
 }
 
 .intro__header {
@@ -41,21 +47,11 @@
     background-size: cover;
   }
 
-  &--index {
-    padding-top: 90px;
-    padding-bottom: 75px;
-
-    @media (min-width: @tablet-width) {
-      padding-top: 78px;
-      padding-bottom: 83px;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 100% 100%;
-    padding-top: 93px;
-    padding-bottom: 109px;
+    padding-top: 95px;
+    padding-bottom: 108px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -64,11 +60,26 @@
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    padding-top: 101px;
-    padding-bottom: 114px;
+    padding-top: 103px;
+    padding-bottom: 111px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 75px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 78px;
+      padding-bottom: 83px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 79px;
+      padding-bottom: 83px;
     }
   }
 
@@ -151,7 +162,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-top: 110px;
+      padding-top: 113px;
     }
   }
 
@@ -193,9 +204,9 @@
 .intro__text {
   .list-style();
 
-  line-height: 26px;
+  line-height: 24px;
 
-  &--form {
-    line-height: 24px;
+  &--index {
+    line-height: 26px;
   }
 }
