@@ -53,10 +53,6 @@
 .reasons__title--white {
   color: #ffffff;
 
-  /*@media (min-width: @tablet-width) {
-    margin: 0 2px;
-  }*/
-
   @media (min-width: @desktop-width) {
     margin: 0 39px;
   }
@@ -82,8 +78,9 @@
     padding-top: 28px;
     padding-left: 0;
     display: flex;
-    text-align: center;
     padding-bottom: 11px;
+
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -150,12 +147,13 @@
     height: 0;
     left: 0;
     top: 0;
+
+    box-sizing: border-box;
+
     border-top: 15px solid #ffffff;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: none;
-
-    box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
       border: none;
@@ -172,6 +170,7 @@
     @media (min-width: @tablet-width) {
       padding-bottom: 0;
       max-width: 158px;
+
       border: none;
     }
 
@@ -269,7 +268,6 @@
   }
 
   &--true-city {
-    //background: #e5af94   50% 50%  cover;
     background-image: url("../img/main-city-mobile@1x.jpg");
     background-color: #e5af94;
     background-repeat: no-repeat;
@@ -298,7 +296,6 @@
   }
 
   &--diablo-bridge {
-    //background: #edbbb1 url("../img/main-bridge-mobile@1x.jpg") no-repeat 50% 50%;
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-color: #edbbb1;
     background-repeat: no-repeat;
