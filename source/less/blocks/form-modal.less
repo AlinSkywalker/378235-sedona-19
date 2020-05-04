@@ -37,6 +37,13 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 26px;
+    font-size: 21px;
+  }
 
   &:hover {
     .button-style-hover();
@@ -60,6 +67,20 @@
   .list-style();
 
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 26px;
+    font-size: 30px;
+  }
+
+  &--failure {
+    @media (min-width: @tablet-width) {
+      line-height: 40px;
+      font-size: 30px;
+      max-width: 247px;
+      margin: 0 auto 40px;
+    }
+  }
 }
 
 .form-modal__wrapper {
@@ -70,7 +91,7 @@
     max-width: 214px;
 
     @media (min-width: @tablet-width) {
-      max-width: 458px;
+      max-width: 415px;
       padding: 49px 0 35px;
     }
   }

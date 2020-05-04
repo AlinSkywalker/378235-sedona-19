@@ -66,7 +66,7 @@
               <div class="reasons__detail-item reasons__detail-item--motel">
                 <div class="reasons__detail-wrapper">
                   <div class="reasons__detail-image reasons__detail-image--house">
-                    <svg class="reasons__detail-svg reasons__detail-svg--house" width="74.695px" height="72.346px" viewBox="0 0 74.695 72.346">
+                    <svg class="reasons__detail-svg reasons__detail-svg--house" width="74" height="72" viewBox="0 0 74.695 72.346">
                       <use xlink:href="img/sprite.svg#icon-house"></use>
                     </svg>
                   </div>
@@ -77,7 +77,7 @@
               <div class="reasons__detail-item reasons__detail-item--not-chineese">
                 <div class="reasons__detail-wrapper reasons__detail-wrapper--gift">
                   <div class="reasons__detail-image reasons__detail-image--gift">
-                    <svg class="reasons__detail-svg reasons__detail-svg--gift" width="63px" height="75.084px" viewBox="0 0 63 75.084">
+                    <svg class="reasons__detail-svg reasons__detail-svg--gift" width="63" height="75" viewBox="0 0 63 75.084">
                       <use xlink:href="img/sprite.svg#icon-gift"></use>
                     </svg>
                   </div>
@@ -88,7 +88,7 @@
               <div class="reasons__detail-item reasons__detail-item--burger">
                 <div class="reasons__detail-wrapper reasons__detail-wrapper--burger">
                   <div class="reasons__detail-image reasons__detail-image--burger">
-                    <svg class="reasons__detail-svg  reasons__detail-svg--burger" width="76.166px" height="68.959px" viewBox="0 0 76.166 68.959">
+                    <svg class="reasons__detail-svg  reasons__detail-svg--burger" width="76" height="69" viewBox="0 0 76.166 68.959">
                       <use xlink:href="img/sprite.svg#icon-burger"></use>
                     </svg>
                   </div>
@@ -141,10 +141,12 @@
             вам лучшие предложения гостиниц в седоне</p>
           <a class="hotel-search__button button" href="#">Найти гостиницу</a>
         </div>
-        <iframe class="hotel-search__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564474.505247366!2d-112.00279115033129!3d34.87271362170046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462035967330"
-          allowfullscreen>
-        </iframe>
+        <div class="hotel-search__map-block">
+          <iframe class="hotel-search__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564474.505247366!2d-112.00279115033129!3d34.87271362170046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462035967330"
+            allowfullscreen>
+          </iframe>
+        </div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
@@ -153,21 +155,21 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="https://vk.com/htmlacademy">Мы в Twitter
-              <svg class="socials__link-image" width="17.5px" height="14.663px">
+              <svg class="socials__link-image" width="17" height="14">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebbok" href="https://vk.com/htmlacademy">Мы в Facebook
-              <svg class="socials__link-image" width="8.672px" height="18.944px">
+              <svg class="socials__link-image" width="8" height="19">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://vk.com/htmlacademy">Мы на Youtube
-              <svg class="socials__link-image" width="19.979px" height="14.015px">
+              <svg class="socials__link-image" width="20" height="14">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -177,7 +179,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <svg class="copyright__link-image" width="26.943px" height="34.09px">
+          <svg class="copyright__link-image" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
@@ -186,6 +188,7 @@
   </div>
   <script src="js/picturefill.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/svguse.min.js"></script>
 </body>
 
 </html>
