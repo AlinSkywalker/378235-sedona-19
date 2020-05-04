@@ -57,17 +57,17 @@
             <li class="feedback-form__item feedback-form__item--person-info">
               <label class="feedback-form__label" for="first-name">Имя*:</label>
               <input class="feedback-form__input feedback-form__input--text" type="text" id="first-name"
-                name="first-name" tabindex="1" placeholder="Петр" required>
+                name="first-name" placeholder="Петр" required>
             </li>
             <li class="feedback-form__item feedback-form__item--person-info">
               <label class="feedback-form__label" for="last-name">Фамилия*:</label>
               <input class="feedback-form__input feedback-form__input--text" type="text" id="last-name" name="last-name"
-                tabindex="2" placeholder="Иванов" required>
+                placeholder="Иванов" required>
             </li>
             <li class="feedback-form__item feedback-form__item--person-info">
               <label class="feedback-form__label" for="middle-name">Отчество:</label>
               <input class="feedback-form__input feedback-form__input--text" type="text" id="middle-name"
-                name="middle-name" tabindex="3" placeholder="Александрович">
+                name="middle-name" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -78,14 +78,14 @@
               <label class="feedback-form__label feedback-form__label--contact-info" for="phone"><span
                   class="feedback-form__phone-part">Контактный </span>телефон*:</label>
               <input class="feedback-form__input feedback-form__input--tel" type="tel" id="phone" name="phone"
-                placeholder="Введите телефон" tabindex="4" required>
+                placeholder="Введите телефон" required>
               <div class="feedback-form__input-icon  feedback-form__input-icon--tel"></div>
             </li>
             <li class="feedback-form__item feedback-form__item--email">
               <label class="feedback-form__label feedback-form__label--contact-info" for="email">Электронная
                 почта*:</label>
               <input class="feedback-form__input feedback-form__input--email" type="email" id="email" name="email"
-                placeholder="Введите e-mail" tabindex="5" required>
+                placeholder="Введите e-mail" required>
               <div class="feedback-form__input-icon  feedback-form__input-icon--email"></div>
             </li>
           </ul>
@@ -95,19 +95,19 @@
           <ul class="feedback-form__impression-info">
             <li class="feedback-form__item feedback-form__item--impression-info">
               <input class="feedback-form__input feedback-form__input--radio" type="radio" id="rather-positive"
-                name="impression-info" tabindex="6" checked>
+                name="impression-info" checked>
               <label class="feedback-form__label feedback-form__label--impression-info" for="rather-positive">Скорее
                 положительное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--impression-info">
               <input class="feedback-form__input feedback-form__input--radio" type="radio" id="rather-negative"
-                name="impression-info" tabindex="7">
+                name="impression-info">
               <label class="feedback-form__label feedback-form__label--impression-info" for="rather-negative">Скорее
                 отрицательное</label>
             </li>
             <li class="feedback-form__item feedback-form__item--impression-info">
               <input class="feedback-form__input feedback-form__input--radio" type="radio" id="difficult-say"
-                name="impression-info" tabindex="8">
+                name="impression-info">
               <label class="feedback-form__label feedback-form__label--impression-info" for="difficult-say">Затрудняюсь
                 ответить</label>
             </li>
@@ -119,25 +119,25 @@
           <ul class="feedback-form__attractions-info">
             <li class="feedback-form__item feedback-form__item--attractions-info">
               <input class="feedback-form__input feedback-form__input--checkbox" type="checkbox" id="diablo-bridge"
-                name="diablo-bridge" tabindex="9" checked>
+                name="diablo-bridge" checked>
               <label class="feedback-form__label feedback-form__label--attractions-info" for="diablo-bridge">Мост
                 Дьявола</label>
             </li>
             <li class="feedback-form__item feedback-form__item--attractions-info">
               <input class="feedback-form__input feedback-form__input--checkbox" type="checkbox" id="bell-mountain"
-                name="bell-mountain" tabindex="10" checked>
+                name="bell-mountain" checked>
               <label class="feedback-form__label feedback-form__label--attractions-info"
                 for="bell-mountain">Гора-Колокол</label>
             </li>
             <li class="feedback-form__item feedback-form__item--attractions-info">
               <input class="feedback-form__input feedback-form__input--checkbox" type="checkbox" id="slide-park"
-                name="slide-park" tabindex="11" checked>
+                name="slide-park" checked>
               <label class="feedback-form__label feedback-form__label--attractions-info"
                 for="slide-park">Слайд-парк</label>
             </li>
             <li class="feedback-form__item feedback-form__item--attractions-info">
               <input class="feedback-form__input feedback-form__input--checkbox" type="checkbox" id="red-rocks"
-                name="red-rocks" tabindex="12">
+                name="red-rocks">
               <label class="feedback-form__label feedback-form__label--attractions-info" for="red-rocks">Красные
                 скалы</label>
             </li>
@@ -146,10 +146,10 @@
         <fieldset class="feedback-form__emotion-info feedback-form__fieldset">
           <span class="feedback-form__legend feedback-form__legend--emotion-info">Опишите свои эмоции:</span>
           <textarea class="feedback-form__input feedback-form__input--textarea"
-            placeholder="Опишите подробно все свои восторги" tabindex="13"></textarea>
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="feedback-form__submit-block">
-          <button class="feedback-form__button button" tabindex="14" type="submit" id="send-feedback">Отправить
+          <button class="feedback-form__button button" type="submit" id="send-feedback">Отправить
             отзыв</button>
           <span class="feedback-form__required-fields">* — обязательные поля</span>
         </div>
@@ -168,7 +168,7 @@
         </div>
         <div class="form-modal__failure modal modal--close">
           <div class="form-modal__wrapper form-modal__wrapper--failure">
-            <h2 class="form-modal__modal-title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+            <h2 class="form-modal__modal-title form-modal__modal-title--failure">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
             <p class="form-modal__modal-content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
             </p>
             <button class="form-modal__modal-button button" id="close-modal-failure">ОК</button>
@@ -182,21 +182,21 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--twitter" href="https://vk.com/htmlacademy">Мы в Twitter
-              <svg class="socials__link-image" width="17.5px" height="14.663px">
+              <svg class="socials__link-image" width="17" height="14">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--facebbok" href="https://vk.com/htmlacademy">Мы в Facebook
-              <svg class="socials__link-image" width="8.672px" height="18.944px">
+              <svg class="socials__link-image" width="8" height="19">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://vk.com/htmlacademy">Мы на Youtube
-              <svg class="socials__link-image" width="19.979px" height="14.015px">
+              <svg class="socials__link-image" width="20" height="14">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -206,7 +206,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <svg class="copyright__link-image" width="26.943px" height="34.09px">
+          <svg class="copyright__link-image" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
@@ -215,6 +215,7 @@
   </div>
   <script src="js/picturefill.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script src="js/svguse.min.js"></script>
 </body>
 
 </html>
